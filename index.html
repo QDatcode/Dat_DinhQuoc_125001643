@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DQPorsche | Quản lý bán xe Porsche</title>
+  <meta name="description" content="DQPorsche - trang quản lý kho xe, đơn đặt cọc và doanh số bán xe Porsche.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true"><p class="logo">DQ<span>Porsche</span></p><i class="loader-bar"></i></div>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="DQPorsche - về đầu trang">DQ<span>Porsche</span></a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Mở hoặc đóng menu">
+    <label for="menu-toggle" class="burger"><span></span></label>
+    <nav aria-label="Điều hướng chính">
+      <ul>
+        <li><a href="#tong-quan">Tổng quan</a></li>
+        <li><a href="#doanh-thu">Doanh thu</a></li>
+        <li><a href="#kho-xe">Kho xe</a></li>
+        <li><a href="#don-hang">Đơn hàng</a></li>
+        <li><a href="#lien-he">Đặt cọc</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_992_GT3_with_touring_package_1X7A6511.jpg?width=1800" alt="Porsche 911 GT3 Touring (992) nhìn từ phía sau bên trái">
+    <div class="wrap hero-text">
+      <h1 id="hero-title" class="animate__animated animate__fadeInUp">DQPorsche</h1>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">Theo dõi kho xe, đơn đặt cọc và doanh số Porsche trong một trang.</p>
+      <div class="actions animate__animated animate__zoomIn animate__delay-2s">
+        <a class="btn btn-primary" href="#kho-xe">Xem kho xe</a>
+        <a class="btn btn-ghost" href="#lien-he">Tạo phiếu đặt cọc</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tong-quan" class="section" aria-labelledby="tq-title">
+    <div class="wrap">
+      <h2 id="tq-title" data-aos="fade-up">Tổng quan tháng 10/2026</h2>
+      <dl class="stats" data-aos="fade-up" data-aos-delay="100">
+        <div><dt>Xe trong kho</dt><dd>18</dd></div>
+        <div><dt>Đã giao tháng này</dt><dd>7</dd></div>
+        <div><dt>Đang đặt cọc</dt><dd>4</dd></div>
+        <div><dt>Doanh thu</dt><dd>54,0 tỷ ₫</dd></div>
+      </dl>
+      <p class="note">Số liệu trong trang là dữ liệu mẫu phục vụ bài kiểm tra.</p>
+    </div>
+  </section>
+
+  <section id="doanh-thu" class="section alt" aria-labelledby="dt-title">
+    <div class="wrap">
+      <h2 id="dt-title" data-aos="fade-up">Doanh thu tháng 10/2026</h2>
+      <p class="lead" data-aos="fade-up">Tổng 54,0 tỷ ₫ từ 7 xe đã giao, tăng 12% so với tháng 9 (48,2 tỷ ₫).</p>
+      <div class="rev">
+        <figure class="panel" data-aos="fade-up">
+          <figcaption><h3>Doanh thu theo tuần (tỷ ₫)</h3></figcaption>
+          <ul class="cols">
+            <li style="--v:57"><span class="val">9,6</span><span class="col"></span><span class="lbl">Tuần 1</span></li>
+            <li style="--v:90"><span class="val">15,2</span><span class="col"></span><span class="lbl">Tuần 2</span></li>
+            <li style="--v:74"><span class="val">12,4</span><span class="col"></span><span class="lbl">Tuần 3</span></li>
+            <li style="--v:100" class="top"><span class="val">16,8</span><span class="col"></span><span class="lbl">Tuần 4</span></li>
+          </ul>
+        </figure>
+        <figure class="panel" data-aos="fade-up" data-aos-delay="100">
+          <figcaption><h3>Doanh thu theo dòng xe (tỷ ₫)</h3></figcaption>
+          <ul class="hbars">
+            <li style="--v:100"><span>911 Carrera S <small>2 xe</small></span><span class="track"><span></span></span><b>17,8</b></li>
+            <li style="--v:81"><span>911 GT3 Touring <small>1 xe</small></span><span class="track"><span></span></span><b>14,5</b></li>
+            <li style="--v:65"><span>Taycan 4S <small>2 xe</small></span><span class="track"><span></span></span><b>11,6</b></li>
+            <li style="--v:29"><span>911 Carrera 4S <small>1 xe</small></span><span class="track"><span></span></span><b>5,2</b></li>
+            <li style="--v:28"><span>718 Cayman <small>1 xe</small></span><span class="track"><span></span></span><b>4,9</b></li>
+          </ul>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="kho-xe" class="section" aria-labelledby="kho-title">
+    <div class="wrap">
+      <h2 id="kho-title" data-aos="fade-up">Kho xe</h2>
+      <p class="lead" data-aos="fade-up">Sáu mẫu xe đang quản lý, kèm giá niêm yết tham khảo và tình trạng hiện tại.</p>
+      <fieldset class="tabs">
+        <legend class="sr">Lọc xe theo trạng thái</legend>
+        <input type="radio" name="loc" id="f-all" checked><label for="f-all">Tất cả</label>
+        <input type="radio" name="loc" id="f-ok"><label for="f-ok">Còn hàng</label>
+        <input type="radio" name="loc" id="f-hold"><label for="f-hold">Đã đặt cọc</label>
+        <input type="radio" name="loc" id="f-soon"><label for="f-soon">Đang về kho</label>
+        <input type="radio" name="loc" id="f-off"><label for="f-off">Đã bán</label>
+      </fieldset>
+      <div class="grid">
+
+        <article class="card" data-s="ok" data-aos="zoom-in-up">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_992_Carrera_S_coupe_IMG_5838.jpg?width=800" alt="Porsche 911 Carrera S coupe (992)" loading="lazy">
+          <div class="card-body">
+            <h3>911 Carrera S (992)</h3>
+            <p>Động cơ boxer 3.0L tăng áp, hộp số PDK 8 cấp.</p>
+            <p class="price">8,9 tỷ ₫</p>
+            <p><span class="badge ok">Còn hàng</span></p>
+            <a class="btn btn-small" href="#lien-he">Đặt cọc xe này</a>
+          </div>
+        </article>
+
+        <article class="card" data-s="hold" data-aos="zoom-in-up" data-aos-delay="100">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_992_GT3_with_touring_package_1X7A6511.jpg?width=800" alt="Porsche 911 GT3 Touring (992)" loading="lazy">
+          <div class="card-body">
+            <h3>911 GT3 Touring (992)</h3>
+            <p>Động cơ hút khí tự nhiên 4.0L, cánh gió thu gọn.</p>
+            <p class="price">14,5 tỷ ₫</p>
+            <p><span class="badge hold">Đã đặt cọc</span></p>
+            <a class="btn btn-small" href="#lien-he">Đăng ký chờ</a>
+          </div>
+        </article>
+
+        <article class="card" data-s="ok" data-aos="zoom-in-up" data-aos-delay="200">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Taycan_4S_IMG_3526.jpg?width=800" alt="Porsche Taycan 4S" loading="lazy">
+          <div class="card-body">
+            <h3>Taycan 4S</h3>
+            <p>Sedan thuần điện, dẫn động bốn bánh.</p>
+            <p class="price">5,8 tỷ ₫</p>
+            <p><span class="badge ok">Còn hàng</span></p>
+            <a class="btn btn-small" href="#lien-he">Đặt cọc xe này</a>
+          </div>
+        </article>
+
+        <article class="card" data-s="soon" data-aos="zoom-in-up">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2018_Porsche_718_Cayman.jpg?width=800" alt="Porsche 718 Cayman màu đen" loading="lazy">
+          <div class="card-body">
+            <h3>718 Cayman</h3>
+            <p>Động cơ đặt giữa, khung gầm cân bằng.</p>
+            <p class="price">4,9 tỷ ₫</p>
+            <p><span class="badge soon">Đang về kho</span></p>
+            <a class="btn btn-small" href="#lien-he">Đăng ký chờ</a>
+          </div>
+        </article>
+
+        <article class="card" data-s="off" data-aos="zoom-in-up" data-aos-delay="100">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2013_Porsche_911_Carrera_4S_(991)_(9626546987).jpg?width=800" alt="Porsche 911 Carrera 4S (991)" loading="lazy">
+          <div class="card-body">
+            <h3>911 Carrera 4S (991)</h3>
+            <p>Xe đã qua sử dụng, đời 2013, dẫn động bốn bánh.</p>
+            <p class="price">5,2 tỷ ₫</p>
+            <p><span class="badge off">Đã bán</span></p>
+            <a class="btn btn-small" href="#lien-he">Hỏi xe tương tự</a>
+          </div>
+        </article>
+
+        <article class="card" data-s="hold" data-aos="zoom-in-up" data-aos-delay="200">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_Carrera_RSR,_Bj._1974_(2011-08-13_Sp).JPG?width=800" alt="Porsche 911 Carrera RSR đời 1974" loading="lazy">
+          <div class="card-body">
+            <h3>911 Carrera RSR (1974)</h3>
+            <p>Xe sưu tầm, bản đua huyền thoại thập niên 1970.</p>
+            <p class="price">Liên hệ</p>
+            <p><span class="badge hold">Đã đặt cọc</span></p>
+            <a class="btn btn-small" href="#lien-he">Liên hệ</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="don-hang" class="section alt" aria-labelledby="dh-title">
+    <div class="wrap">
+      <h2 id="dh-title" data-aos="fade-up">Đơn hàng gần đây</h2>
+      <div class="table-wrap" data-aos="fade-up">
+        <table>
+          <caption>Năm đơn gần nhất (dữ liệu mẫu)</caption>
+          <thead>
+            <tr><th scope="col">Mã đơn</th><th scope="col">Khách hàng</th><th scope="col">Xe</th><th scope="col">Giá trị</th><th scope="col">Trạng thái</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">DQ-1041</th><td>Nguyễn Minh Khoa</td><td>911 Carrera S</td><td>8,9 tỷ ₫</td><td><span class="badge ok">Đã giao</span></td></tr>
+            <tr><th scope="row">DQ-1042</th><td>Trần Thu Hà</td><td>Taycan 4S</td><td>5,8 tỷ ₫</td><td><span class="badge hold">Đặt cọc</span></td></tr>
+            <tr><th scope="row">DQ-1043</th><td>Lê Quốc Bảo</td><td>911 GT3 Touring</td><td>14,5 tỷ ₫</td><td><span class="badge hold">Đặt cọc</span></td></tr>
+            <tr><th scope="row">DQ-1044</th><td>Phạm Gia Hân</td><td>911 Carrera 4S</td><td>5,2 tỷ ₫</td><td><span class="badge ok">Đã giao</span></td></tr>
+            <tr><th scope="row">DQ-1045</th><td>Võ Thanh Tùng</td><td>718 Cayman</td><td>4,9 tỷ ₫</td><td><span class="badge soon">Chờ xe về</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="lien-he" class="section" aria-labelledby="lh-title">
+    <div class="wrap form-grid">
+      <div data-aos="fade-right">
+        <h2 id="lh-title">Tạo phiếu đặt cọc</h2>
+        <p class="lead">Điền thông tin khách hàng và xe quan tâm. Nhân viên bán hàng sẽ gọi lại trong ngày làm việc.</p>
+      </div>
+      <form action="#" method="post" data-aos="fade-left">
+        <label for="ten">Họ và tên</label>
+        <input id="ten" name="ten" type="text" autocomplete="name" placeholder="Nguyễn Văn A" required>
+        <label for="sdt">Số điện thoại</label>
+        <input id="sdt" name="sdt" type="tel" autocomplete="tel" placeholder="0900 000 000" pattern="[0-9 +]{9,14}" required>
+        <label for="xe">Xe quan tâm</label>
+        <select id="xe" name="xe">
+          <option>911 Carrera S (992)</option>
+          <option>911 GT3 Touring (992)</option>
+          <option>Taycan 4S</option>
+          <option>718 Cayman</option>
+          <option>911 Carrera RSR (1974)</option>
+        </select>
+        <label for="ghichu">Ghi chú</label>
+        <textarea id="ghichu" name="ghichu" rows="3"></textarea>
+        <button class="btn btn-primary" type="submit">Gửi phiếu đặt cọc</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="logo">DQ<span>Porsche</span></p>
+      <p>Đinh Quốc Đạt - MSSV 125001643</p>
+      <p>Bài kiểm tra giữa kỳ, học phần Thiết kế Web, Trường Đại học Lạc Hồng.</p>
+    </div>
+    <div>
+      <p>Liên hệ: <a href="mailto:contact@dqporsche.example">contact@dqporsche.example</a></p>
+      <p>Hotline: 0900 000 000</p>
+      <p class="credit">Ảnh xe: Wikimedia Commons (Alexander Migl, CC BY-SA 4.0; 多多123, CC BY 4.0; các tác giả khác theo trang tệp gốc).</p>
+    </div>
+  </div>
+  <p class="wrap copy">&copy; 2026 DQPorsche. Trang không phải của Porsche AG.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, easing: 'ease-out-cubic', offset: 60, once: true });</script>
+</body>
+</html>
